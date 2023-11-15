@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.btn {
+    font-family: $poppins;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+
+    &__white {
+        @extend .btn;
+        background-color: $white;
+        color: $light-green;
+    }
+
+    &__green {
+        @extend .btn;
+        background-color: $light-green;
+        color: $white;
+    }
+}

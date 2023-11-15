@@ -1,0 +1,56 @@
+@use "../abstracts" as *;
+
+b {
+    font-weight: bold;
+}
+
+u {
+    text-underline-position: under;
+}
+
+.header {
+
+    &__tagline {
+        font-family: $poppins;
+        color: $white;
+    }
+
+    h1 {
+        font-size: 126px;
+    }
+
+    h2 {
+        font-size: 54px;
+        font-style: italic;
+        rotate: -9deg;
+    }
+}
+
+.navbar {
+    ul {
+        font-family: $poppins;
+    }
+}
+
+.welcome {
+    h2 {
+        color: $light-green;
+        font-size: 52px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.accroche__content {
+    h2 {
+        color: $white;
+        font-size: 52px;
+    }
+
+    p {
+        color: $white;
+        font-size: 18px;
+    }
+}

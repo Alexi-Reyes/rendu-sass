@@ -1,0 +1,49 @@
+@use "../abstracts" as *;
+
+.preparations {
+    height: 100vh;
+    background-image: url("../sources/louis-hansel-MlPD-AzZYMg-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    font-family: $poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &__vert {
+        background-color: RGBA(178, 210, 52, 0.85);
+
+        h3 {
+            font-size: 52px;
+        }
+    }
+
+    &__bleu {
+        background-color: RGBA(96, 160, 216, 0.85);
+
+        h3 {
+            font-size: 52px;
+        }
+    }
+}
+
+.preparations__vert, .preparations__bleu {
+    width: 45%;
+    height: 70%;
+
+    .title {
+        margin-bottom: 40px;
+    }
+}
+
+.vert__left, .vert__right, .bleu__left, .bleu__right {
+    padding: 20px;
+
+    p {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}

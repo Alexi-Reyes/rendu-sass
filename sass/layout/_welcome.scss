@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.welcome {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../sources/salade-detoure.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &__content {
+        max-width: 630px;
+        padding-left: 80px;
+
+        h2 {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.welcome__content .text {
+    max-width: 500px;
+
+    p {
+        padding-bottom: 40px;
+    }
+}

@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+
+.header {
+    height: 100vh;
+    background-image:url("../sources/Header-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-self: end;
+        padding-right: 40px;
+        gap: 20px;
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 40px;
+
+    &__logo {
+        width: 200px;
+        height: 100px;
+    }
+
+    ul {
+        display: flex;
+        color: $white;
+        font-size: 15px;
+
+        li {
+            padding: 15px;
+        }
+    }
+}

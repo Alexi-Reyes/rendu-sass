@@ -1,0 +1,28 @@
+@use "../abstracts" as *;
+
+.accroche {
+    height: 100vh;
+    background-image: url("../sources/ismael-trevino-NDyuR4Huig8-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: RGBA(178, 210, 52, 0.85);
+        padding: 40px;
+        max-width: 500px;
+        margin-right: 100px;
+        text-align: center;
+
+        p {
+            max-width: 350px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}
