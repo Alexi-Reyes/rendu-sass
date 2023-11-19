@@ -1,31 +1,19 @@
 @use "../abstracts" as *;
 
 .preparations {
+    @include flex();
     height: 100vh;
     background-image: url("../sources/louis-hansel-MlPD-AzZYMg-unsplash.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: $white;
-    font-family: $poppins;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
 
     &__vert {
         background-color: RGBA(178, 210, 52, 0.85);
-
-        h3 {
-            font-size: 52px;
-        }
     }
 
     &__bleu {
         background-color: RGBA(96, 160, 216, 0.85);
-
-        h3 {
-            font-size: 52px;
-        }
     }
 }
 
@@ -34,16 +22,26 @@
     height: 70%;
 
     .title {
+        margin-top: 40px;
         margin-bottom: 40px;
     }
 }
 
 .vert__left, .vert__right, .bleu__left, .bleu__right {
-    padding: 20px;
+    padding-top: 20px;
 
     p {
+        @include flex-h();
         padding: 10px;
-        display: flex;
-        justify-content: center;
     }
+}
+
+.vert__left, .bleu__left {
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+.vert__right, .bleu__right {
+    padding-right: 20px;
+    padding-left: 40px;
 }

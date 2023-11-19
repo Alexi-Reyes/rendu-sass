@@ -1,0 +1,69 @@
+@use "../abstracts" as *;
+
+.menu {
+    height: 100vh;
+    background-image: url("../sources/pattern-hexagonal.png");
+
+    &__description {
+        @include flex();
+        flex-direction: column;
+
+        width: 60%;
+        justify-self: center;
+        align-self: center;
+
+        h2 {
+            padding-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    &__products {
+        justify-self: center;
+        
+        .product{
+            padding-bottom: 30px;
+
+            .wrapper-name-price {
+                @include flex-h($justify: space-between);
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    &__order {
+        justify-self: center;
+    }
+
+    @media screen and (max-width: 950px) {
+        @include flex-h(); 
+        flex-wrap: wrap;  
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.menu__order {
+    height: 70%;
+
+    .title, .description, .wrapper-btn {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .title {
+        rotate: -10deg;
+
+        p {
+            padding-bottom: 10px;
+        }
+    }
+
+    .description {
+        width: 70%;
+        text-align: center;
+    }
+}

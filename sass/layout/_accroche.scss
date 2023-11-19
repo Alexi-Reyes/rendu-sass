@@ -1,17 +1,15 @@
 @use "../abstracts" as *;
 
 .accroche {
+    @include flex($justify: end);
     height: 100vh;
     background-image: url("../sources/ismael-trevino-NDyuR4Huig8-unsplash.png");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+
 
     &__content {
-        display: flex;
-        align-items: center;
+        @include flex-v();
         flex-direction: column;
         background-color: RGBA(178, 210, 52, 0.85);
         padding: 40px;

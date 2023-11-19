@@ -9,49 +9,126 @@
 
     <body>
         <header class="header">
-            <nav class="navbar">
-                <img class="navbar__logo" src="sources/Logo.png" alt="">
-                <ul>
-                    <li>Accueil</li>
-                    <li>Qui sommes-nous?</li>
-                    <li>Menu</li>
-                    <li>Contact</li>
-                    <li class="btn__white">Commander</li>
-                </ul>
-            </nav>
-            <div class="header__tagline">
-                <h1>mongoo</h1>
-                <h2>c'est frais pour vous !</h2>
-            </div>
-            <div class="header__socials">
-                <img src="sources/Icon awesome-facebook-square.png" alt="">
-                <img src="sources/Icon awesome-twitter-square.png" alt="">
-                <img src="sources/Icon awesome-instagram.png" alt="">
+            <div class="header__overlay">
+                <nav class="navbar">
+                    <img class="navbar__logo" src="sources/Logo.png" alt="">
+                    <ul>
+                        <li>Accueil</li>
+                        <li>Qui sommes-nous?</li>
+                        <li>Menu</li>
+                        <li>Contact</li>
+                        <li class="btn__white">Commander</li>
+                    </ul>
+                </nav>
+                <div class="header__tagline">
+                    <h1>mongoo</h1>
+                    <h2>c'est frais pour vous !</h2>
+                </div>
+                <div class="header__socials">
+                    <img src="sources/Icon awesome-facebook-square.png" alt="">
+                    <img src="sources/Icon awesome-twitter-square.png" alt="">
+                    <img src="sources/Icon awesome-instagram.png" alt="">
+                </div>
             </div>
         </header>
 
-        <div class="welcome"> <!-- a changer a une grid a 2 column-->
+        <div class="welcome">
             <div class="welcome__content">
                 <h2>Une salade sur mesure</h2>
                 <div class="text">
-                    <p>MONGOO vous permet de composer votre salade selon vos envies et vos goûts.</p>
-                    <p>Une quarantaine d'ingrédients frais et préparés le matin même sur place vous sont proposés au quotidien.</p>
-                    <p>Depuis maintenant 10 ans, MONGOO fait le bonheur des gourmets et des gourmands, alors pourquoi pas vous ? </p>
+                    <p>MONGOO vous permet de composer votre salade selon vos envies et vos goûts.
+                        <br>
+                        <br>
+                        Une quarantaine d'ingrédients frais et préparés le matin même sur place vous sont proposés au quotidien.
+                        <br>
+                        <br>
+                        Depuis maintenant 10 ans, MONGOO fait le bonheur des gourmets et des gourmands, alors pourquoi pas vous ? </p>
                 </div>
-                <div class="btn__green">En savoir +</div>
+                <button class="btn__green">En savoir +</button>
             </div>
-            <img src="sources/salade-detoure.png" alt="">
+            <img class="welcome__image" src="sources/salade-detoure.png" alt="">
         </div>
         
         <div class="accroche">
             <div class="accroche__content">
-                <h2>Préparé sur place et avec amour</h2>
+                <h2><b>Préparé sur place et avec amour</b></h2>
                 <p>Chez MONGOO, <u>tous les ingrédients</u> et <u>tous les desserts</u> sont préparés sur place.</p>
                 <p>Nous mettons un point d'honneur à ce que tous les matins, nos équipes de super-préparateurs <b>découpent, tranchent, épluchent, assaisonnent, mélangent, émincent, saupoudrent</b> et préparent tout ce qu'il y a sur le bar afin de vous proposer les meilleures combinaisons de salades possible.</p>
                 <p>Alors faites votre choix !</p>
-                <div class="btn__white">En savoir +</div>
+                <button class="btn__white">En savoir +</button>
             </div>
         </div>
+
+        <div class="menu">
+            <div class="menu__description">
+                <h2>Vous avez dit menu ?</h2>
+                <p>Un menu MONGOO, c'est une salade accompagnée d'une boisson et d'un dessert.
+                    <br>
+                    Mais attention, pas n'importe quelle boisson et n'importe quel dessert...
+                    ​<br>
+                    <br>
+                    Découvrez notre large sélection de boissons et desserts pour accompagner votre repas</p>
+            </div>
+            <div class="menu__products">
+                <div class="product">
+                    <div class="wrapper-name-price">
+                        <h3>Salade j'aime</h3>
+                        <p>7,70€</p>
+                    </div>
+                    <p class="product-description">1 base · 4 ingrédients verts · Sauce
+                        <br>
+                        Petit plus et pain offert </p>
+                </div>
+                <div class="product">
+                    <div class="wrapper-name-price">
+                        <h3>Salade j'adore</h3>
+                        <p>8,80€</p>
+                    </div>
+                    <p class="product-description">1 base · 3 ingrédients verts & 1 bleu · Sauce
+                        <br>
+                        Petit plus et pain offert </p>
+                </div>
+                <div class="product best--seller">
+                    <div class="wrapper-name-price">
+                        <h3>Salade 2-2</h3>
+                        <p>9,90€</p>
+                    </div>
+                    <p class="product-description">1 base · 2 ingrédients verts & 2 bleus · Sauce
+                        <br>
+                        Petit plus et pain offert </p>
+                </div>
+                <div class="product">
+                    <div class="wrapper-name-price">
+                        <h3>Salade passion</h3>
+                        <p>11,00€</p>
+                    </div>
+                    <p class="product-description">1 base · 1 ingrédient verts & 3 bleus · Sauce
+                        <br>
+                        Petit plus et pain offert </p>
+                </div>
+                <div class="product">
+                    <div class="wrapper-name-price">
+                        <h3>Salade folie</h3>
+                        <p>12,10€</p>
+                    </div>
+                    <p class="product-description">1 base · 4 ingrédients bleus · Sauce
+                        <br>
+                        Petit plus et pain offert </p>
+                </div>
+            </div>
+            <div class="menu__order">
+                <div class="title">
+                    <p class="green">Force verte ?</p>
+                    <p class="bleu">Force bleue ?</p>
+                </div>
+                <p class="description">Ne perdez pas une seconde, faites votre choix
+                    et venez chercher votre salade dans 20min !</p>
+                <div class="wrapper-btn">
+                    <button class="btn__green">Passer commande</button>
+                </div>
+            </div>
+        </div>
+
         <div class="preparations">
             <div class="preparations__vert">
                 <h3 class="title">Chez les verts</h3>
@@ -80,54 +157,84 @@
             <div class="preparations__bleu">
                 <h3 class="title">Chez les bleus</h3>
                 <div class="bleu__left">
-                    <p>Croûtons</p>
-                    <p>Œuf (1)</p>
-                    <p>Betteraves</p>
-                    <p>Carottes</p>
-                    <p>Choux rouges</p>
-                    <p>Concombre</p>
-                    <p>Lentilles</p>
-                    <p>Maïs</p>
-                    <p>Oignons rouges</p>
+                    <p>Aubergines</p>
+                    <p>Avocat</p>
+                    <p>Cantal</p>
+                    <p>Cœur d'artichaut</p>
+                    <p>Grana Panado</p>
+                    <p>Jambon cru</p>
+                    <p>Crevettes</p>
                 </div>
                 <div class="bleu__right">
-                    <p>Radis</p>
-                    <p>Pommes</p>
-                    <p>Oignons frits</p>
-                    <p>Emmental</p>
-                    <p>Mozzarella</p>
-                    <p>Mimolette</p>
-                    <p>Surimi</p>
-                    <p>Saucisses</p>
+                    <p>Feta</p>
+                    <p>Melon</p>
+                    <p>Œuf poché</p>
+                    <p>Poivrons</p>
+                    <p>Thon</p>
+                    <p>Tomates cerises</p>
+                    <p>Tomates séchées</p>
                 </div>
             </div>
             </div>
         </div>
 
         <div class="form">
-            <img src="sources/anh-nguyen-_Uqj5BQb-mw-unsplash.png" alt="">
+            <img src="sources/anh-nguyen-_Uqj5BQb-mw-unsplash.png" alt="">          
             <div class="form__content">
-                <h2>Envie de partager ?</h2>
-                <p>Toute l'année, on recrute des employés motivés pour tous nos restaurants ! 
-                    N'hésitez pas à postuler !</p>
-                <div class="forms">
-                    <input class="name" type="text">
-                    <label for="name">Nom</label>
+                <div class="description">
+                    <h2>Envie de partager ?</h2>
+                    <p>Toute l'année, on recrute des employés motivés pour tous nos restaurants ! 
+                        <br>N'hésitez pas à postuler !</p>
+                </div>
+                <div class="form-fields">
+                    <div class="wrapper-name">
+                        <div>                            
+                            <label for="name">Nom</label>
+                            <input id="name" class="name" type="text">
+                        </div>
+                        <div>
+                            <label for="family-name">Prénom</label>
+                            <input id="family-name" class="family-name" type="text">
+                        </div>                 
+                    </div>
 
-                    <input class="family-name" type="text">
-                    <label for="family-name">Prénom</label>
+                    <div class="wrapper-email">
+                        <label for="email">Email</label>
+                        <input id="email" class="email" type="text">
+                    </div>
 
-                    <input class="email" type="text">
-                    <label for="email">Email</label>
+                    <div class="wrapper-details">
+                        <label for="details">Votre motivation en quelques mots</label>
+                        <textarea class="details" name="" id="details" cols="30" rows="10"></textarea>
+                    </div>
 
-                    <input class="details" type="text">
-                    <label for="details">Votre motivation en quelques mots</label>
+                    <div class="wrapper-btn">
+                        <button class="btn__green">En savoir +</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <footer>
-
+        <footer class="footer">
+            <img class="footer__logo" src="sources/Logo.png" alt="">
+            <div class="footer__commander">
+                <h3>Commander</h3>
+                <p>Passer commande</p>
+                <p>Nos menus</p>
+                <p>Restaurants</p>
+            </div>
+            <div class="footer__informations">
+                <h3>Informations</h3>
+                <p>F.A.Q</p>
+                <p>Mentions légales</p>
+                <p>Recrutement</p>
+            </div>
+            <div class="footer__socials">
+                <h3>Nous retrouver</h3>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </div>
         </footer>
     </body>
 </html>

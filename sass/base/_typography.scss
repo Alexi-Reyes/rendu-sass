@@ -28,19 +28,27 @@ u {
 
 .navbar {
     ul {
+        font-size: 15px;
         font-family: $poppins;
+        color: $white;
     }
 }
 
 .welcome {
+    font-family: $poppins;
+
     h2 {
         color: $light-green;
-        font-size: 52px;
+        font-size: 40px;
     }
 
     p {
         font-size: 18px;
     }
+}
+
+.accroche {
+    font-family: $poppins;
 }
 
 .accroche__content {
@@ -52,5 +60,91 @@ u {
     p {
         color: $white;
         font-size: 18px;
+    }
+}
+
+.menu {
+    font-family: $poppins;
+
+    &__description {
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+            color: $light-green;
+        }
+
+        p {
+            color: $grey;
+        }
+    }
+
+    &__products .product {
+        .wrapper-name-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: $light-green;
+        }
+
+        &-description {
+            color: $grey;
+        }
+    }
+}
+
+.menu__order .title{
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+
+    .green {
+        color: $light-green;
+    }
+
+    .bleu {
+        color: $bleu;
+    }
+}
+
+.preparations {
+    color: $white;
+    font-family: $poppins;
+
+    &__vert h3{
+        font-size: 52px;
+    }
+
+    &__bleu h3{
+        font-size: 52px;
+    }
+}
+
+.form {
+    font-family: $poppins;
+}
+
+.form__content {
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+        color: $light-green;
+    }
+
+    p {
+        color: $grey;
+    }
+
+    label {
+        font-style: italic;
+        color: $light-green;
+    }
+}
+
+.footer {
+    font-family: $poppins;
+    color: $white;
+
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
     }
 }

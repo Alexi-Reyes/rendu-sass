@@ -1,8 +1,82 @@
+@use "../abstracts" as *;
+
 .form {
     height: 100vh;
+    background-image: url("../sources/pattern-leaves.png");
 
     img {
-        height: 200px;
-        width: 200px;
+        justify-self: center;
+        align-self: center;
+        height: 70%;
+    }
+
+    @media screen and (max-width: 850px) {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+
+        &__content {
+            padding-top: 20px;
+            padding-bottom: 20px
+        }
+    }
+}
+
+.form__content {
+    @include flex();
+    flex-direction: column;
+
+    .description, .form-fields {
+        width: 80%;
+    }
+
+    .description {
+        width: 80%;
+        h2 {
+            padding-bottom: 20px;
+        }
+
+        p {
+            width: 70%;
+        }
+
+    }
+
+    .form-fields {
+        padding-top: 20px;
+
+        input {
+            padding-top: 10px;
+        }
+    }
+}
+
+.form-fields {
+    .wrapper-name {
+        @include flex-h($justify: space-between);
+        padding-bottom: 20px;
+    
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
+    }
+    
+    .wrapper-email {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    
+    .wrapper-details {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    
+    .wrapper-btn {
+        display: flex;
+        justify-content: center;
     }
 }

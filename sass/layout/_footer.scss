@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.footer {
+    height: 290px;
+    background-color: $light-green;
+}
+
+.footer__commander, .footer__informations, .footer__socials {
+    @include flex-h();
+    flex-direction: column;
+
+    h3 {
+        padding-bottom: 40px;
+    }
+
+    p {
+        padding: 10px;
+    }
+} 
